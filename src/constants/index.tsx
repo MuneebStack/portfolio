@@ -99,7 +99,7 @@ export const projects: ProjectType[] = [
     ],
     skills: ["Rust", "WebAssembly", "JavaScript", "Tailwind CSS", "HTML5"],
     image: "images/showcase/pixelplay.png",
-    liveUrl: "https://pixelplay-project.vercel.app/",
+    liveUrl: "https://pixelplay.xionex.cloud",
   },
   {
     id: 2,
@@ -116,7 +116,7 @@ export const projects: ProjectType[] = [
     ],
     skills: ["Laravel", "PostgreSQL", "Redis", "React", "Docker", "Google Cloud Platform"],
     image: "images/showcase/newsflux.png",
-    liveUrl: "https://newsflux-app-29697596338.asia-south1.run.app/",
+    liveUrl: "https://newsflux.xionex.cloud",
   },
   {
     id: 3,
@@ -131,7 +131,7 @@ export const projects: ProjectType[] = [
     ],
     skills: ["Symfony", "PostgreSQL", "React", "Tailwind CSS", "HTML5"],
     image: "images/showcase/teamtrade.png",
-    liveUrl: "https://teammanager.com",
+    liveUrl: "https://teamtrade.xionex.cloud",
   },
   {
     id: 4,
