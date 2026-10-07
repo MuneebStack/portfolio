@@ -42,7 +42,7 @@ const GlowCard = ({ card, index, fullReview = false, onOpen }: GlowCardProps) =>
         return (
             <>
                 {" "}
-                {review}{" "}
+                <span dangerouslySetInnerHTML={{ __html: review }} />{" "}
                 {isReadMoreRequired && (
                     <button
                         onClick={() => onOpen?.(index)}

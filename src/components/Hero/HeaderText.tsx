@@ -39,17 +39,26 @@ const HeaderText = () => {
                         </span>
                     </span>
                 </h1>
-                <h1>into Real Projects</h1>
-                <h1>that Deliver Results</h1>
+                <h1>into High-Throughput</h1>
+                <h1>Systems that Scale.</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                Senior Software Engineer, passionate about building efficient and scalable solutions
+                Helping founders and CTOs design resilient distributed systems, optimize cloud performance, and eliminate technical debt.
             </p>
-            <Button
-                id="button"
-                text="See My Work"
-                className="md:w-80 md:h-16 w-60 h-12"
-            />
+            <div className="flex gap-4 flex-col">
+                <Button
+                    id="button"
+                    text="Discuss System Architecture"
+                    className="md:w-120 md:h-16 w-80 h-12"
+                    targetId="contact"
+                />
+                <Button
+                    id="button"
+                    text="See My Work"
+                    className="md:w-80 md:h-16 w-60 h-12 md:self-end self-auto"
+                    targetId="work"
+                />
+            </div>
         </div>
     );
 }

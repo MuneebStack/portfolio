@@ -37,13 +37,13 @@ const navLinks: NavLinkType[] = [
 
 const words: WordType[] = [
   { text: "Ideas", Icon: Lightbulb },
-  { text: "Concepts", Icon: Shapes },
-  { text: "Designs", Icon: PenTool },
+  { text: "Architectures", Icon: Shapes },
+  { text: "Infrastructure", Icon: PenTool },
   { text: "Code", Icon: Code },
 ];
 
 const counterItems: CounterItemType[] = [
-  { value: 4, suffix: "+", label: "Years of Experience" },
+  { value: 5, suffix: "+", label: "Years of Experience" },
   { value: 30, suffix: "+", label: "Satisfied Clients" },
   { value: 100, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
@@ -190,22 +190,77 @@ export const projects: ProjectType[] = [
 const abilities: AbilityType[] = [
   {
     Icon: Layers,
-    title: "Scalable Architecture",
-    desc: "Building reliable backend and frontend systems designed for growth and clean maintainability."
-  },
-  {
-    Icon: ClipboardCheck,
-    title: "End-to-End Ownership",
-    desc: "Driving projects from concept to deployment with accountable, consistent execution."
+    title: "SaaS & Distributed Systems Architecture",
+    desc: "Designing multi-tenant database schemas, decoupled backend services, and event-driven pipelines built for high concurrency and ultra-low latency."
   },
   {
     Icon: Gauge,
-    title: "High-Performance Engineering",
-    desc: "Optimizing APIs, databases, and UI rendering for fast, efficient, smooth user experiences."
+    title: "Performance & Infrastructure Optimization",
+    desc: "Identifying system bottlenecks, refactoring high-volume database queries, and reducing cloud operational overhead while maintaining 99.99% uptime."
+  },
+  {
+    Icon: ClipboardCheck,
+    title: "Enterprise Integrations & Regulatory Compliance",
+    desc: "Architecting secure API pipelines, SHA-256 cryptographic verification, custom payload signing, and strict regulatory compliance protocols (e.g., ZATCA e-invoicing standards)."
   }
 ]
 
 export const techCategories = [
+  {
+    name: "Core Architectural Capabilities",
+    skills: [
+      {
+        // Indigo/Blue -> Stability, Scalability, Systems
+        name: "Distributed Systems",
+        icon: "https://ui-avatars.com/api/?name=DS&background=1e1b4b&color=818cf8&bold=true&rounded=true&size=128"
+      },
+      {
+        // Cyan/Teal -> Modern Cloud, Multi-Tenancy
+        name: "Multi-Tenant SaaS",
+        icon: "https://ui-avatars.com/api/?name=SAAS&background=083344&color=38bdf8&bold=true&rounded=true&size=128"
+      },
+      {
+        // Emerald/Green -> Architectural Balance & Clean Code
+        name: "Monolith vs. Microservices",
+        icon: "https://ui-avatars.com/api/?name=MS&background=064e3b&color=34d399&bold=true&rounded=true&size=128"
+      },
+      {
+        // Amber/Orange -> Real-time Data Streams & Event Flow
+        name: "Event-Driven Pipelines",
+        icon: "https://ui-avatars.com/api/?name=EDA&background=451a03&color=fbbf24&bold=true&rounded=true&size=128"
+      },
+      {
+        // Purple/Violet -> Complex Query Optimization & Data Wisdom
+        name: "High-Volume SQL & Query Refactoring",
+        icon: "https://ui-avatars.com/api/?name=SQL&background=3b0764&color=c084fc&bold=true&rounded=true&size=128"
+      },
+      {
+        // Rose/Crimson -> High Velocity & Ultra-Low Latency
+        name: "Low-Latency API Engineering",
+        icon: "https://ui-avatars.com/api/?name=API&background=4c0519&color=fb7185&bold=true&rounded=true&size=128"
+      },
+      {
+        // Slate/Steel -> Cryptography & Hardened Security
+        name: "Cryptographic Payload Signing (SHA-256)",
+        icon: "https://ui-avatars.com/api/?name=SHA&background=0f172a&color=94a3b8&bold=true&rounded=true&size=128"
+      },
+      {
+        // Gold/Warm Yellow -> Enterprise Compliance, Trust & Value
+        name: "Regulatory Protocol Compliance (ZATCA)",
+        icon: "https://ui-avatars.com/api/?name=REG&background=3f2e04&color=facc15&bold=true&rounded=true&size=128"
+      },
+      {
+        // Coral/Red -> Redis In-Memory Speed & Hot Caching
+        name: "Redis & Caching Strategy",
+        icon: "https://ui-avatars.com/api/?name=CACHE&background=450a0a&color=f87171&bold=true&rounded=true&size=128"
+      },
+      {
+        // Fuchsia/Electric Pink -> AI Innovation & Future Workflows
+        name: "AI Developer Automation",
+        icon: "https://ui-avatars.com/api/?name=AI&background=4a044e&color=e879f9&bold=true&rounded=true&size=128"
+      },
+    ]
+  },
   {
     name: "Programming Languages",
     skills: [
@@ -293,6 +348,43 @@ export const techCategories = [
 ];
 
 const experienceCards: ExperienceCardType[] = [
+  {
+    title: "Software Solutions Architect",
+    date: "07/2026 - Present",
+    logoPath: "images/experiences/persistbrands.jpg",
+    achievements: [
+      "Engineered core digital platforms and custom developer tooling, including internal CLI utilities, automation scripts, and AI-driven workflows, streamlining execution speed and multi-system rollouts.",
+      "Partnered directly with C-level executives to translate business objectives into software solutions, resolve structural system bottlenecks, and optimize digital infrastructure for peak efficiency."
+    ]
+  },
+  {
+    title: "Team Lead",
+    date: "05/2026 - 08/2026",
+    logoPath: "https://ui-avatars.com/api/?name=D&background=27272a&color=ffffff&bold=true&rounded=true&size=128",
+    achievements: [
+      "Spearheaded engineering operations and GitLab release workflows for a B2B ERP accounting system, managing code reviews, technical roadmaps, and executive briefings to prepare the platform for global enterprise expansion.",
+      "Led continuous architectural enhancements across core invoicing and payment modules, reducing deployment friction by 30% and improving overall platform stability for active business clients."
+    ]
+  },
+  {
+    title: "Senior Software Engineer",
+    date: "04/2026 - 05/2026",
+    logoPath: "https://ui-avatars.com/api/?name=D&background=27272a&color=ffffff&bold=true&rounded=true&size=128",
+    achievements: [
+      "Refactored bloat and redundant auto-generated code across primary financial modules, reducing codebase complexity by 35% and establishing clean, maintainable architecture patterns.",
+      "Diagnosed and resolved critical production bugs in sales and purchase invoice workflows, restoring system reliability and directly stemming client churn across key enterprise accounts.",
+    ]
+  },
+  {
+    title: "Independent Senior Software Engineer",
+    date: "10/2025 - 03/2026",
+    logoPath: "https://ui-avatars.com/api/?name=SE&background=18181b&color=38bdf8&bold=true&rounded=true&size=128",
+    achievements: [
+      "Designed, fine-tuned, and deployed 3 applied-ML semantic search SBERT models; integrated the best model into an internal artifact repository for reusable asset retrieval.",
+      "Built and deployed 2 React Native apps and end-to-end full-stack systems (Python, PHP, Node.js, Rust, Go), owning CI/CD, release pipelines, containerized deployments, APIs, and post-launch maintenance.",
+      "Provided scoped technical consulting (NDA) for startups and enterprises, including technical audits, workflow optimization, and exportable, audit-ready systems. Deliverables were documented and handover-ready."
+    ]
+  },
   {
     title: "Senior Software Engineer",
     date: "03/2025 - 09/2025",
@@ -486,6 +578,18 @@ const testimonials: TestimonialType[] = [
     name: "Binvin B",
     location: "Bengaluru, India",
     review: "I’ve had the privilege of working with Muneeb Shoukat at Connect Resource, and he has consistently stood out as a highly skilled and dependable software engineer. He has a clear understanding of the solutions he builds and an impressive ability to explain complex processes in a simple, structured manner. On multiple occasions, he patiently addressed my queries, even taking the time to walk me through step-by-step explanations over Google Meet, which speaks volumes about his commitment and clarity. Beyond his technical expertise, Muneeb has demonstrated remarkable leadership qualities. He has been a constant source of support not only to his teammates but also to colleagues across different teams. His approachable nature, willingness to share knowledge, and passion for his work made him a go-to person for guidance and collaboration. I’m confident that wherever he goes, he will bring the same level of expertise, passion, and leadership that made him such an asset at Connect Resource. I truly recommend him as a valuable professional who can make a positive impact in any organization.",
+    imgPath: "https://ui-avatars.com/api/?name=Binvin+B&background=FF6B6B&color=ffffff",
+    source: {
+      url: "https://www.linkedin.com/in/muneeb69",
+      Icon: <FaLinkedin className="text-blue-400 text-base" />,
+      desc: "Linkedin Recommendation"
+    },
+    hasStars: false
+  },
+  {
+    name: "Thilina Pathum",
+    location: "Colombo, Srilanka",
+    review: "I had the pleasure of working with Muneeb at Connect Resources, and I can confidently say he is an exceptional Senior Software Engineer and technical leader. His knowledge of software engineering principles, scalable architectures, and modern technology stacks is outstanding. He consistently approaches challenges with a solution oriented mindset and handles complex project situations with professionalism and confidence. </br></br> One of Muneeb’s strongest qualities is his communication and leadership style. Whenever the team faced technical or project related issues, he was always willing to support and guide everyone with patience and clarity. He has a unique ability to explain deep technical concepts and complex scenarios in a simple, clear, and easily understandable way, which greatly helped both developers and QA team members collaborate effectively. </br></br> As a QE professional, I especially appreciated his strong understanding of quality focused development and problem solving approach. He works with high motivation, supports the entire team, and ensures projects are handled efficiently from both technical and collaborative perspectives. Muneeb is truly a valuable asset to any organization, and I highly recommend him to any team looking for a skilled, reliable, and inspiring engineering professional.",
     imgPath: "https://ui-avatars.com/api/?name=Binvin+B&background=FF6B6B&color=ffffff",
     source: {
       url: "https://www.linkedin.com/in/muneeb69",

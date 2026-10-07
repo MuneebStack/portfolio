@@ -4,23 +4,26 @@ interface ButtonProps {
     id: string;
     text: string;
     className?: string;
+    targetId?: string;
 }
 
-const Button = ({ id, text, className = '' } : ButtonProps) => {
+const Button = ({ id, text, className = '', targetId } : ButtonProps) => {
     return (
         <a 
             id={id} 
             className={`cta-wrapper ${className}`}
             onClick={(e) => {
                 e.preventDefault();
-                const target = document.getElementById('counter');
-                if (target && id) {
-                    const offset = window.innerHeight * 0.15;
-                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({
-                        top,
-                        behavior: 'smooth' 
-                    })
+                if (targetId) {
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        const offset = window.innerHeight * 0.15;
+                        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({
+                            top,
+                            behavior: 'smooth' 
+                        });
+                    }
                 }
             }}
         >
